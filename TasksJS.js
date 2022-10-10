@@ -17,3 +17,7 @@ function expressionMatter(a, b, c) {
 }
 
 //task 2 
+function multipleOfIndex(array) {
+  const a = array.filter ((f, index) => f % index === 0);
+return a;
+}
