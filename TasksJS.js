@@ -21,3 +21,10 @@ function multipleOfIndex(array) {
   const a = array.filter ((f, index) => f % index === 0);
 return a;
 }
+
+//task 3
+function removeEveryOther(arr){
+  var result = arr.filter((e,i)=>!(i%2))
+  return result
+  
+}
