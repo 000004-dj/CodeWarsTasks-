@@ -28,3 +28,17 @@ function removeEveryOther(arr){
   return result
   
 }
+//task 4
+function abbrevName(name){
+  let newName = name.split(" ");
+ newName.forEach((item, index) => {
+   if (index === 0){
+     name = item.charAt() + '.'
+   } else {
+     name += item.charAt()
+   }
+ })
+  // code away
+  return name
+
+}
