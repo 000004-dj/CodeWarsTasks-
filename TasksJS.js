@@ -69,3 +69,15 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
       };
 }
 //task 5
+const arr = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+function howMuchILoveYou(nbPetals) {
+  let rslt
+if (nbPetals % 6 === 0) {
+  rslt = arr[5]
+} else {
+ rslt = arr[nbPetals % 6 - 1 ]
+};
+
+    return rslt
+};
+// task 6
