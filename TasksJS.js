@@ -42,3 +42,30 @@ function abbrevName(name){
   return name
 
 }
+
+//task 4 
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  let a = pontoonDistance;
+  let b = sharkDistance;
+  let c = youSpeed;
+  let d = dolphin;
+  let e = sharkSpeed;
+  let f = a / c;
+  let result = e; 
+  if (b === 0){
+      return "Shark Bait!";
+  };
+  if (d = true){ 
+          result = e / 2; 
+          };
+  if (d = false){ 
+          result = e; 
+          };        
+  if (f <= (b / result)) {
+      return "Alive!"
+  };
+      if (f > (b / result)) {
+          return "Shark Bait!"
+      };
+}
+//task 5
