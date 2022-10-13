@@ -81,3 +81,21 @@ if (nbPetals % 6 === 0) {
     return rslt
 };
 // task 6
+function countSheeps(arrayOfSheep) {
+  const rslt = arrayOfSheep.filter(item => item === false )
+console.log(arrayOfSheep.length -rslt.length);
+}
+countSheeps(array1)
+
+// tesk 7
+
+let rslt;
+let rslt2;
+let y;
+function noSpace(x){
+  rslt = x.split(" ");
+  y = "";
+  rslt2 = rslt.filter(item => item !== y);
+  return rslt2.join("")
+}
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
