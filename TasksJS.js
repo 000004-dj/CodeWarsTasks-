@@ -118,3 +118,7 @@
 //   return rsltA + rsltB;
 // }
 // console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+function sumMix(x){
+  return x.map(a => +a).reduce((a, b) => a + b);
+}
