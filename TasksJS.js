@@ -119,6 +119,11 @@
 // }
 // console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
 
-function sumMix(x){
-  return x.map(a => +a).reduce((a, b) => a + b);
-}
+// function sumMix(x){
+//   return x.map(a => +a).reduce((a, b) => a + b);
+// }
+
+function positiveSum(arr) {
+  const a = arr.filter(index => index > 0);
+  return a.reduce((sum, current) => sum + current, 0);
+ }
