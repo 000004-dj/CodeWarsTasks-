@@ -132,7 +132,12 @@
 //   return words.join(" ")
 // };
 
-function findNeedle(haystack) {
-  return "found the needle at position " + haystack.indexOf('needle');
-   // your code here
- }
+// function findNeedle(haystack) {
+//   return "found the needle at position " + haystack.indexOf('needle');
+//    // your code here
+//  }
+
+var findAverage = function (nums) {
+  return (nums.map(a => +a).reduce((a, b) => a + b)) / nums.length;
+  // Code here
+}
