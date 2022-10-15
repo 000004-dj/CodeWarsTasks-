@@ -123,7 +123,11 @@
 //   return x.map(a => +a).reduce((a, b) => a + b);
 // }
 
-function positiveSum(arr) {
-  const a = arr.filter(index => index > 0);
-  return a.reduce((sum, current) => sum + current, 0);
- }
+// function positiveSum(arr) {
+//   const a = arr.filter(index => index > 0);
+//   return a.reduce((sum, current) => sum + current, 0);
+//  }
+
+function smash (words) {
+  return words.join(" ")
+};
