@@ -128,6 +128,11 @@
 //   return a.reduce((sum, current) => sum + current, 0);
 //  }
 
-function smash (words) {
-  return words.join(" ")
-};
+// function smash (words) {
+//   return words.join(" ")
+// };
+
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf('needle');
+   // your code here
+ }
