@@ -159,9 +159,17 @@
 //   return a.includes(x); // поиск x в массиве a
 //  }
 
-function past(h, m, s){
-  let sek = s * 1000;
-  let min = m * 60000;
-   let hour = h * 3600000;
-   return sek + min + hour
- }
+// function past(h, m, s){
+//   let sek = s * 1000;
+//   let min = m * 60000;
+//    let hour = h * 3600000;
+//    return sek + min + hour
+//  }
+function simpleMultiplication(number) {
+    if (number % 2 === 0){
+      return number * 8
+    } else {
+      return number * 9
+    }
+    
+    }
