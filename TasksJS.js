@@ -155,6 +155,13 @@
 // }
 // console.log(countBy(1,10));
 
-function check(a, x) { 
-  return a.includes(x); // поиск x в массиве a
+// function check(a, x) { 
+//   return a.includes(x); // поиск x в массиве a
+//  }
+
+function past(h, m, s){
+  let sek = s * 1000;
+  let min = m * 60000;
+   let hour = h * 3600000;
+   return sek + min + hour
  }
