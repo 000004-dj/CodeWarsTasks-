@@ -165,11 +165,16 @@
 //    let hour = h * 3600000;
 //    return sek + min + hour
 //  }
-function simpleMultiplication(number) {
-    if (number % 2 === 0){
-      return number * 8
-    } else {
-      return number * 9
-    }
+// function simpleMultiplication(number) {
+//     if (number % 2 === 0){
+//       return number * 8
+//     } else {
+//       return number * 9
+//     }
     
-    }
+//     }
+
+function helloWorld(){
+    const str = "Hello World!";
+    console.log(str)
+  }
