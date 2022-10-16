@@ -137,7 +137,13 @@
 //    // your code here
 //  }
 
-var findAverage = function (nums) {
-  return (nums.map(a => +a).reduce((a, b) => a + b)) / nums.length;
-  // Code here
+// var findAverage = function (nums) {
+//   return (nums.map(a => +a).reduce((a, b) => a + b)) / nums.length;
+//   // Code here
+// }
+
+function mergeArrays(arr1, arr2) {
+  const x = [...arr1,...arr2];
+  x.sort((a, b) => a - b);
+  return x.filter((c, i) => x.indexOf(c) === i); // функция удаления повторяющихся элементов
 }
