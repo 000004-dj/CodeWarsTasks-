@@ -142,8 +142,19 @@
 //   // Code here
 // }
 
-function mergeArrays(arr1, arr2) {
-  const x = [...arr1,...arr2];
-  x.sort((a, b) => a - b);
-  return x.filter((c, i) => x.indexOf(c) === i); // функция удаления повторяющихся элементов
-}
+// function mergeArrays(arr1, arr2) {
+//   const x = [...arr1,...arr2];
+//   x.sort((a, b) => a - b);
+//   return x.filter((c, i) => x.indexOf(c) === i); // функция удаления повторяющихся элементов
+// }
+
+//   let rslt = [];
+// function countBy(x, n) {
+//   for (let i = x; i <= n; i++);
+//   return rslt.push(i)
+// }
+// console.log(countBy(1,10));
+
+function check(a, x) { 
+  return a.includes(x); // поиск x в массиве a
+ }
