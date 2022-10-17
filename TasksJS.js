@@ -275,10 +275,20 @@
 //     return 'This ' + obj.color.split('"') + ' ' + obj.name.split('"') + ' has ' + JSON.stringify(obj.legs) + ' legs.' 
 //   }
 
-function trueOrFalse(val){
-    if (val == false || val == undefined || val == null)  {
-      return 'false'
-    } else if (val !== false) {
-      return 'true'
-    };
+// function trueOrFalse(val){
+//     if (val == false || val == undefined || val == null)  {
+//       return 'false'
+//     } else if (val !== false) {
+//       return 'true'
+//     };
+//   }
+
+function saleHotdogs(n){
+  if(n < 5) {
+    return n * 100
+  }else if(n >= 5 && n < 10){
+    return n * 95
+  } else if(n >= 10){
+    return n * 90
   }
+}
