@@ -271,6 +271,14 @@
 
 
 
-function animal(obj){
-    return 'This ' + obj.color.split('"') + ' ' + obj.name.split('"') + ' has ' + JSON.stringify(obj.legs) + ' legs.' 
+// function animal(obj){
+//     return 'This ' + obj.color.split('"') + ' ' + obj.name.split('"') + ' has ' + JSON.stringify(obj.legs) + ' legs.' 
+//   }
+
+function trueOrFalse(val){
+    if (val == false || val == undefined || val == null)  {
+      return 'false'
+    } else if (val !== false) {
+      return 'true'
+    };
   }
