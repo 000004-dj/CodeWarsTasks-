@@ -331,10 +331,21 @@
 //   return str;
 // }
 
-function testEven(n) {
-  if(n % 2 === 0){
-  return true
- } else{
-   return false
- }
+// function testEven(n) {
+//   if(n % 2 === 0){
+//   return true
+//  } else{
+//    return false
+//  }
+// }
+
+
+function findAverage(array) {
+  let result;
+let a = array.reduce((sum, current) => sum + current, 0);
+  if (a <= 0){
+ return 0
+    } else{
+      result =  a / array.length};
+  return result
 }
