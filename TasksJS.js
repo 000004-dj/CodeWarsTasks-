@@ -340,12 +340,18 @@
 // }
 
 
-function findAverage(array) {
-  let result;
-let a = array.reduce((sum, current) => sum + current, 0);
-  if (a <= 0){
- return 0
-    } else{
-      result =  a / array.length};
-  return result
-}
+// function findAverage(array) {
+//   let result;
+// let a = array.reduce((sum, current) => sum + current, 0);
+//   if (a <= 0){
+//  return 0
+//     } else{
+//       result =  a / array.length};
+//   return result
+// }
+
+
+function greet(name){
+    return "Hello, "+ name +" how are you doing today?"
+     //your code here
+   }
