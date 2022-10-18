@@ -410,7 +410,12 @@
 //     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 //   }
 
-function distinct(n) {
-    const x = n;
-    return x.filter((c, i) => x.indexOf(c) === i); 
+// function distinct(n) {
+//     const x = n;
+//     return x.filter((c, i) => x.indexOf(c) === i); 
+//   }
+
+
+function numberToString(num) {
+    return num.toString()
   }
