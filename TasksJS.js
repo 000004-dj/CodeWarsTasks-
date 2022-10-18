@@ -356,32 +356,38 @@
 //      //your code here
 //    }
 
-function quarterOf(month) {
+// function quarterOf(month) {
   
-    let a = month;
-    switch (a){
-        case 1:
-        case 2:
-        case 3:
-         a = 1;
-        break;
+//     let a = month;
+//     switch (a){
+//         case 1:
+//         case 2:
+//         case 3:
+//          a = 1;
+//         break;
         
-        case 4:
-        case 5:
-        case 6:
-         a = 2;
-        break;
+//         case 4:
+//         case 5:
+//         case 6:
+//          a = 2;
+//         break;
         
-        case 7:
-        case 8:
-        case 9:
-         a = 3;
-        break;
+//         case 7:
+//         case 8:
+//         case 9:
+//          a = 3;
+//         break;
         
-        case 10:
-        case 11:
-        case 12:
-         a = 4;
-        break;
-    } return a
-  };
+//         case 10:
+//         case 11:
+//         case 12:
+//          a = 4;
+//         break;
+//     } return a
+//   };
+
+
+function unusualFive(x) {
+    const arr = ["a", "s", "f", "w", "r"];
+    return arr.length
+  }
