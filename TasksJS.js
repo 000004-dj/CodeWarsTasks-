@@ -387,7 +387,12 @@
 //   };
 
 
-function unusualFive(x) {
-    const arr = ["a", "s", "f", "w", "r"];
-    return arr.length
-  }
+// function unusualFive(x) {
+//     const arr = ["a", "s", "f", "w", "r"];
+//     return arr.length
+//   }
+
+
+function makeUpperCase(str) {
+    return str.toUpperCase()
+   }
