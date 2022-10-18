@@ -393,6 +393,15 @@
 //   }
 
 
-function makeUpperCase(str) {
-    return str.toUpperCase()
-   }
+// function makeUpperCase(str) {
+//     return str.toUpperCase()
+//    }
+
+
+function boolToWord( bool ){
+    if(bool == true){
+      return "Yes"
+    }else if(bool == false){
+      return "No"
+    }
+  }
