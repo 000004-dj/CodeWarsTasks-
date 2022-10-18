@@ -406,6 +406,11 @@
 //     }
 //   }
 
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-    return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//     return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+//   }
+
+function distinct(n) {
+    const x = n;
+    return x.filter((c, i) => x.indexOf(c) === i); 
   }
