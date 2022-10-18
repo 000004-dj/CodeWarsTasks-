@@ -416,6 +416,11 @@
 //   }
 
 
-function numberToString(num) {
-    return num.toString()
+// function numberToString(num) {
+//     return num.toString()
+//   }
+
+
+function printArray(array){
+    return array.join(',')
   }
