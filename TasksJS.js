@@ -426,6 +426,10 @@
 //   }
 
 
-const stringToNumber = function(str){
-    return +str
+// const stringToNumber = function(str){
+//     return +str
+// }
+
+function square (nbr)  {
+    return nbr**2;
 }
