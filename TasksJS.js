@@ -430,6 +430,15 @@
 //     return +str
 // }
 
-function square (nbr)  {
-    return nbr**2;
+// function square (nbr)  {
+//     return nbr**2;
+// }
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if((fuelLeft * mpg) >= distanceToPump){
+        return true
+    }else {
+        return false
+    }
+
 }
