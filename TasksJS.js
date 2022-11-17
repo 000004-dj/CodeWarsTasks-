@@ -434,8 +434,19 @@
 //     return nbr**2;
 // }
 
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    if((fuelLeft * mpg) >= distanceToPump){
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     if((fuelLeft * mpg) >= distanceToPump){
+//         return true
+//     }else {
+//         return false
+//     }
+//
+// }
+
+
+
+function betterThanAverage(classPoints, yourPoints) {
+    if ((classPoints.reduce((a, b) => (a + b)) / classPoints.length) < yourPoints) {
         return true
     }else {
         return false
