@@ -445,11 +445,22 @@
 
 
 
-function betterThanAverage(classPoints, yourPoints) {
-    if ((classPoints.reduce((a, b) => (a + b)) / classPoints.length) < yourPoints) {
-        return true
-    }else {
-        return false
-    }
+// function betterThanAverage(classPoints, yourPoints) {
+//     if ((classPoints.reduce((a, b) => (a + b)) / classPoints.length) < yourPoints) {
+//         return true
+//     }else {
+//         return false
+//     }
+//
+// }
 
+
+var min = function(list){
+
+    return Math.min.apply(null,list);
+}
+
+var max = function(list){
+
+    return Math.max.apply(null,list);
 }
