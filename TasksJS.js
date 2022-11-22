@@ -455,12 +455,21 @@
 // }
 
 
-var min = function(list){
+// var min = function(list){
+//
+//     return Math.min.apply(null,list);
+// }
+//
+// var max = function(list){
+//
+//     return Math.max.apply(null,list);
+// }
 
-    return Math.min.apply(null,list);
-}
 
-var max = function(list){
-
-    return Math.max.apply(null,list);
+function howManyLightsabersDoYouOwn(name) {
+    if(name === "Zach"){
+        return 18
+    } else {
+        return 0
+    }
 }
