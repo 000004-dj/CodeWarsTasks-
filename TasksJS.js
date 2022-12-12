@@ -510,6 +510,15 @@
 // //Write your own Code!
 // }
 
-function solution(str){
-    return str.split("").reverse().join("");
+// function solution(str){
+//     return str.split("").reverse().join("");
+// }
+
+
+function sayHello(name) {
+    return `Hello, ${name}`
+}
+
+function otherAngle(a, b) {
+    return 180 - (a + b);
 }
