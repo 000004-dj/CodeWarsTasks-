@@ -515,10 +515,22 @@
 // }
 
 
-function sayHello(name) {
-    return `Hello, ${name}`
-}
+// function sayHello(name) {
+//     return `Hello, ${name}`
+// }
+//
+// function otherAngle(a, b) {
+//     return 180 - (a + b);
+// }
 
-function otherAngle(a, b) {
-    return 180 - (a + b);
+function updateLight(current) {
+    if (current === "green"){
+        return "yellow"
+    }else if(current === "yellow"){
+        return "red"
+    }else {
+        return "green"
+    }
+    //your code here!
+
 }
