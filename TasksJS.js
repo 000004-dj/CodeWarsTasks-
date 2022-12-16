@@ -534,3 +534,6 @@ function updateLight(current) {
     //your code here!
 
 }
+
+
+const getAverage = (nums) => Math.floor(nums.reduce((a, b) => (a + b)) / nums.length)
