@@ -522,18 +522,26 @@
 // function otherAngle(a, b) {
 //     return 180 - (a + b);
 // }
+//
+// function updateLight(current) {
+//     if (current === "green"){
+//         return "yellow"
+//     }else if(current === "yellow"){
+//         return "red"
+//     }else {
+//         return "green"
+//     }
+//     //your code here!
+//
+// }
+//
+//
+// const getAverage = (nums) => Math.floor(nums.reduce((a, b) => (a + b)) / nums.length)
 
-function updateLight(current) {
-    if (current === "green"){
-        return "yellow"
-    }else if(current === "yellow"){
-        return "red"
-    }else {
-        return "green"
-    }
-    //your code here!
 
+
+const findShort = (s) => {
+    let wordsArray =  s.split(' ');
+    let smallestWord = wordsArray.sort((a,b)=>a.length - b.length )
+    return smallestWord[0].length
 }
-
-
-const getAverage = (nums) => Math.floor(nums.reduce((a, b) => (a + b)) / nums.length)
