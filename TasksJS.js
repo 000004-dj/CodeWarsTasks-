@@ -540,8 +540,22 @@
 
 
 
-const findShort = (s) => {
-    let wordsArray =  s.split(' ');
-    let smallestWord = wordsArray.sort((a,b)=>a.length - b.length )
-    return smallestWord[0].length
+// const findShort = (s) => {
+//     let wordsArray =  s.split(' ');
+//     let smallestWord = wordsArray.sort((a,b)=>a.length - b.length )
+//     return smallestWord[0].length
+// }
+
+
+function stray(numbers) {
+    return numbers.sort((a,b) => {
+        if(a < b) {
+            return -1
+        }else {return 1}
+    })[0]
 }
+
+
+console.log(stray([-5505, -5505, -5505, -5505, -8975]),
+stray([17, 3, 17, 17, 17]), stray([1, 1, 2]))
+
