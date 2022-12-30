@@ -565,3 +565,6 @@
 function shortcut (string){
     return string.replace(/[aeiou]/gi, '')
 }
+
+
+const sumStr = (a,b) => (+a + +b).toString()
