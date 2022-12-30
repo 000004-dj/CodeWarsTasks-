@@ -547,15 +547,21 @@
 // }
 
 
-function stray(numbers) {
-    return numbers.sort((a,b) => {
-        if(a < b) {
-            return -1
-        }else {return 1}
-    })[0]
+// function stray(numbers) {
+//     return numbers.sort((a,b) => {
+//         if(a < b) {
+//             return -1
+//         }else {return 1}
+//     })[0]
+// }
+//
+//
+// console.log(stray([-5505, -5505, -5505, -5505, -8975]),
+// stray([17, 3, 17, 17, 17]), stray([1, 1, 2]))
+//
+
+
+
+function shortcut (string){
+    return string.replace(/[aeiou]/gi, '')
 }
-
-
-console.log(stray([-5505, -5505, -5505, -5505, -8975]),
-stray([17, 3, 17, 17, 17]), stray([1, 1, 2]))
-
