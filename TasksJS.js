@@ -579,3 +579,10 @@ function invert(array) {
     }
     return array ;
 }
+
+
+function isPalindrome(x) {
+    let y = x.toLowerCase().split("")
+    return y.reverse().join("") === x.toLowerCase() ? true : false
+    // your code here
+}
