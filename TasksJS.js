@@ -560,11 +560,22 @@
 // stray([17, 3, 17, 17, 17]), stray([1, 1, 2]))
 //
 
+//
+//
+// function shortcut (string){
+//     return string.replace(/[aeiou]/gi, '')
+// }
+//
+//
+// const sumStr = (a,b) => (+a + +b).toString()
 
 
-function shortcut (string){
-    return string.replace(/[aeiou]/gi, '')
+function invert(array) {
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] === "0") {
+            array[i] = array[i] * (1);
+        }
+        array[i] = array[i] * (-1);
+    }
+    return array ;
 }
-
-
-const sumStr = (a,b) => (+a + +b).toString()
