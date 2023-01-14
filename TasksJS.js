@@ -568,21 +568,34 @@
 //
 //
 // const sumStr = (a,b) => (+a + +b).toString()
+//
+//
+// function invert(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] === "0") {
+//             array[i] = array[i] * (1);
+//         }
+//         array[i] = array[i] * (-1);
+//     }
+//     return array ;
+// }
+//
+//
+// function isPalindrome(x) {
+//     let y = x.toLowerCase().split("")
+//     return y.reverse().join("") === x.toLowerCase() ? true : false
+//     // your code here
+// }
+//
 
 
-function invert(array) {
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] === "0") {
-            array[i] = array[i] * (1);
-        }
-        array[i] = array[i] * (-1);
+var number = function(busStops){
+
+    let num = busStops.map((i) => i[0] - i[1])
+    var sum = 0;
+    for(var i = 0; i < num.length; i++){
+        sum += num[i];
     }
-    return array ;
-}
-
-
-function isPalindrome(x) {
-    let y = x.toLowerCase().split("")
-    return y.reverse().join("") === x.toLowerCase() ? true : false
-    // your code here
+    return sum
+    // Good Luck!
 }
