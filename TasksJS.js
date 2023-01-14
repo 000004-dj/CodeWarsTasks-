@@ -599,3 +599,9 @@ var number = function(busStops){
     return sum
     // Good Luck!
 }
+
+
+function discoverOriginalPrice(discountedPrice, salePercentage){
+    let originalPrice = discountedPrice + (discountedPrice / (100 - salePercentage) * salePercentage )
+    return +originalPrice.toFixed(2)
+}
