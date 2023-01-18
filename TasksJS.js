@@ -587,21 +587,23 @@
 //     // your code here
 // }
 //
+//
+//
+// var number = function(busStops){
+//
+//     let num = busStops.map((i) => i[0] - i[1])
+//     var sum = 0;
+//     for(var i = 0; i < num.length; i++){
+//         sum += num[i];
+//     }
+//     return sum
+//     // Good Luck!
+// }
+//
+//
+// function discoverOriginalPrice(discountedPrice, salePercentage){
+//     let originalPrice = discountedPrice + (discountedPrice / (100 - salePercentage) * salePercentage )
+//     return +originalPrice.toFixed(2)
+// }
 
-
-var number = function(busStops){
-
-    let num = busStops.map((i) => i[0] - i[1])
-    var sum = 0;
-    for(var i = 0; i < num.length; i++){
-        sum += num[i];
-    }
-    return sum
-    // Good Luck!
-}
-
-
-function discoverOriginalPrice(discountedPrice, salePercentage){
-    let originalPrice = discountedPrice + (discountedPrice / (100 - salePercentage) * salePercentage )
-    return +originalPrice.toFixed(2)
-}
+const toNumberArray =(stringarray) => stringarray.map(i=>+i)
