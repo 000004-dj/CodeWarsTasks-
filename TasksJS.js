@@ -606,14 +606,25 @@
 //     return +originalPrice.toFixed(2)
 // }
 
-const toNumberArray =(stringarray) => stringarray.map(i=>+i)
+// const toNumberArray =(stringarray) => stringarray.map(i=>+i)
+//
+//
+// function smallEnough(a, limit){
+//     let b = a.filter(i => i > limit)
+//     if(b.length > 0){
+//         return false
+//     } else{
+//         return true
+//     }
+// }
 
-
-function smallEnough(a, limit){
-    let b = a.filter(i => i > limit)
-    if(b.length > 0){
-        return false
-    } else{
-        return true
+var number=function(array){
+    let rsltArr;
+    if(array.length > 0){
+        rsltArr = array.map((i,index)=> `${index+1}: ${i}` )}else{
+        return []
     }
+
+    return rsltArr
+
 }
