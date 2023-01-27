@@ -618,13 +618,21 @@
 //     }
 // }
 
-var number=function(array){
-    let rsltArr;
-    if(array.length > 0){
-        rsltArr = array.map((i,index)=> `${index+1}: ${i}` )}else{
-        return []
-    }
+// var number=function(array){
+//     let rsltArr;
+//     if(array.length > 0){
+//         rsltArr = array.map((i,index)=> `${index+1}: ${i}` )}else{
+//         return []
+//     }
+//
+//     return rsltArr
+//
+// }
 
-    return rsltArr
 
-}
+
+function sortByLength (array) {
+
+    return array.sort((a,b)=> a.length - b.length)
+
+};
