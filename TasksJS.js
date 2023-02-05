@@ -630,9 +630,39 @@
 // }
 
 
+//
+// function sortByLength (array) {
+//
+//     return array.sort((a,b)=> a.length - b.length)
+//
+// };
 
-function sortByLength (array) {
 
-    return array.sort((a,b)=> a.length - b.length)
 
-};
+function convertHashToArray(hash){
+    const newArr = Object.entries(hash)
+    return newArr.sort()
+}
+
+function largest(n, array) {
+
+    let result = [];
+    if(n === 0){
+        result = []
+    }
+    if(n === 1){
+        let a = array.sort((a, b) => a - b)
+        result.push(a.pop())
+    }
+
+    if(n > 1){
+        for(var i = 0; i < n; i++){
+            let b = array.sort((a, b) => a - b)
+            result.push(b.pop())
+            result.sort((a, b) => a - b)
+        }
+    }
+
+
+    return result;
+}
