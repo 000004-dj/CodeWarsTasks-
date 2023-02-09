@@ -637,32 +637,48 @@
 //
 // };
 
+//
+//
+// function convertHashToArray(hash){
+//     const newArr = Object.entries(hash)
+//     return newArr.sort()
+// }
+//
+// function largest(n, array) {
+//
+//     let result = [];
+//     if(n === 0){
+//         result = []
+//     }
+//     if(n === 1){
+//         let a = array.sort((a, b) => a - b)
+//         result.push(a.pop())
+//     }
+//
+//     if(n > 1){
+//         for(var i = 0; i < n; i++){
+//             let b = array.sort((a, b) => a - b)
+//             result.push(b.pop())
+//             result.sort((a, b) => a - b)
+//         }
+//     }
+//
+//
+//     return result;
+// }
 
 
-function convertHashToArray(hash){
-    const newArr = Object.entries(hash)
-    return newArr.sort()
+function sumOfMinimums(arr) {
+    let a = arr.map((i )=> {
+        return i.sort((a,b) => a - b)
+    } )
+    let b = a.map(i => i[0])
+    let c = 0;
+    for(let i = 0; i < b.length; i++){
+        c += b[i]
+    }
+    return c
 }
 
-function largest(n, array) {
 
-    let result = [];
-    if(n === 0){
-        result = []
-    }
-    if(n === 1){
-        let a = array.sort((a, b) => a - b)
-        result.push(a.pop())
-    }
-
-    if(n > 1){
-        for(var i = 0; i < n; i++){
-            let b = array.sort((a, b) => a - b)
-            result.push(b.pop())
-            result.sort((a, b) => a - b)
-        }
-    }
-
-
-    return result;
-}
+const getEvenNumbers = (numbersArray) => numbersArray.filter(i => !(i % 2))
